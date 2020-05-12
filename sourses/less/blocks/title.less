@@ -1,0 +1,94 @@
+.title {
+	background: @bg-blue url('../img/background-m.jpg') no-repeat center;
+	background-size: cover;
+	color: @bg-white;
+}
+
+.title__wrap {
+	.center;
+	width: 89%;
+	max-width: @desktop-width;
+
+}
+
+.title__title {
+	margin-top: 100px;
+	font-weight: bold;
+	font-size: 34px;
+	line-height: 48px;
+}
+
+.title__text {
+	//.center;
+	margin-top: 10px;
+	//width: 89%;
+	font-size: 18px;
+	line-height: 36px;
+}
+
+.title__br {
+	display: none;
+}
+
+.title__button {
+	line-height: 20px;
+	width: 180px;
+	height: 50px;
+	font-size: 16px;
+	text-align: center;
+	//padding: 15px 35px;
+	margin-top: 30px;
+}
+@media (min-width: @tablet-width) {
+	.title {
+		background-image: url("../img/background-t.jpg");
+	}
+
+	.title__title {
+		width: 530px;
+		margin-top: 350px;
+		margin-bottom: 30px;
+		font-size: 74px;
+		line-height: 86px;
+	}
+
+	.title__text {
+		width: 530px;
+		margin-top: 10px;
+		margin-bottom: 40px;
+		font-size: 28px;
+		line-height: 48px;
+	}
+
+	.title__br {
+		display: inline;
+	}
+
+	.title__button {
+		line-height: 40px;
+		width: 252px;
+		height: 76px;
+		font-size: 20px;
+		padding: 20px 50px;
+	}
+}
+@media (min-width: @desktop-width) {
+	.title {
+		background-image: url("../img/background-d.jpg");
+	}
+
+	.title__title {
+		width: 800px;
+		margin-top: 260px;
+		margin-bottom: 20px;
+		font-size: 94px;
+		line-height: 106px;
+	}
+
+	.title__text {
+		width: 800px;
+		margin-bottom: 35px;
+		font-size: 32px;
+		line-height: 56px;
+	}
+}

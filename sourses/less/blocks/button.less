@@ -1,0 +1,32 @@
+.button {
+	display: block;
+	width: 260px;
+	height: 76px;
+	background: @text-brown;
+	color: @text-white;
+	font-size: 20px;
+	line-height: 40px;
+	padding-top: 15px;
+	//padding: 15px 55px;
+	text-align: center;
+	border: none;
+
+	&:focus,
+	&:hover {
+		background: @text-brown50;
+		border: 1px solid @text-hover;
+	}
+}
+
+.button--opacity {
+	border: 1px solid @text-gray-light;
+	background: none;
+	color: @text-gray-light;
+
+	&:focus,
+	&:hover {
+		background: none;
+		border: 1px solid @text-brown;
+		color: @text-brown;
+	}
+}

@@ -1,0 +1,85 @@
+.form__title {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 32px;
+	margin-bottom: 10px;
+}
+
+.form__lable {
+	display: block;
+	position: relative;
+	padding-left: 24px;
+	margin-bottom: 12px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 32px;
+
+	&:focus,
+	&:hover {
+		color: @text-brown50;
+	}
+}
+
+.form__indicator {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	display: block;
+	width: 12px;
+	height: 12px;
+	border: 1px solid @text-white;
+}
+// .form__lable when (input[type="radio"]:checked) {
+// 	color: red;
+// }
+
+.form__lable input[type="radio"]:hover + .form__indicator,
+.form__lable input[type="radio"]:focus + .form__indicator {
+	border-color: @text-brown50;
+}
+
+.form__lable input[type="radio"]:checked + .form__indicator {
+	border-color: @text-brown;
+}
+
+.form__lable input[type="radio"]:checked + .form__indicator::before {
+	content: "";
+	top: 3px;
+	left: 3px;
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: @text-brown;
+}
+
+.fomm__button-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form__button {
+	line-height: 20px;
+	width: 48%;
+	max-width: 210px;
+	height: 50px;
+	font-size: 14px;
+	line-height: 40px;
+	padding-top: 2px;
+	margin-top: 30px;
+}
+@media (min-width: @tablet-width) {
+	.form__title {
+		font-size: 18px;
+		line-height: 36px;
+	}
+
+	.fomm__button-wrap {
+		width: 450px;
+	}
+
+	.form__button {
+		font-size: 20px;
+		line-height: 40px;
+		height: 75px;
+	}
+}

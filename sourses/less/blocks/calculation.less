@@ -1,0 +1,42 @@
+.calculation {
+	background: @bg-black url('../img/bg-gray.jpg') repeat 0 0;
+	//background-size: 100%;
+	color: @text-white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	//shape-outside: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+}
+
+.calculation__title {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 38px;
+}
+
+.calculation__text {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 36px;
+	margin-bottom: 25px;
+}
+@media (min-width: @tablet-width) {
+	.calculation {
+		padding-top: 50px;
+		padding-bottom: 95px;
+		clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+	}
+
+	.calculation__title {
+		width: 84%;
+		font-size: 40px;
+		line-height: 56px;
+	}
+
+	.calculation__text {
+		width: 84%;
+		font-size: 20px;
+		line-height: 40px;
+		margin-bottom: 12px;
+	}
+}

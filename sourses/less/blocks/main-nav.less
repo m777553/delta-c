@@ -1,0 +1,156 @@
+.main-nav__background {
+	background: @bg-blue65 linear-gradient(to right, rgba(0,0,0,0), @bg-blue65);
+	position: relative;
+	z-index: 1;
+}
+
+.main-nav {
+	.d-nole;
+	.center;
+	color: @text-white;
+	font-size: 14px;
+	line-height: 32px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 90%;
+	min-width: 300px;
+}
+
+.main-nav__logo {
+	display: block;
+	position: relative;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 35px;
+	margin-right: 80px;
+	background: url("../img/logo.svg") no-repeat left center;
+}
+
+.main-nav__toogle {
+	border: none;
+	background: none;
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 140px;
+	height: 35px;
+	cursor: pointer;
+}
+
+.main-nav__wraper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main-nav__list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.main-nav__item {
+	display: block;
+}
+
+.main-nav__item a {
+	display: block;
+	color: @text-white;
+
+	&:focus,
+	&:hover {
+		color: @text-hover;
+	}
+}
+
+.main-nav__feedback {
+	display: none;
+}
+
+.main-nav__phone {
+	display: block;
+	color: @text-white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	&:focus,
+	&:hover {
+		color: @text-hover;
+	}
+}
+
+.main-nav__time {
+	font-size: 12px;
+	line-height: 28px;
+	color: @text-gray-light;
+	padding-top: 16px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+}
+@media (min-width: @tablet-width) {
+	.main-nav__feedback {
+		display: block;
+		color: @text-white;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-right: 65px;
+		font-size: 16px;
+		line-height: 32px;
+		text-transform: none;
+		text-decoration: underline;
+		text-decoration-style: dashed;
+		//border-bottom: 1px dashed @text-gray-light;
+	}
+
+	.main-nav__toogle {
+		width: 22px;
+		height: 2px;
+		background: @text-white;
+		left: auto;
+		top: 45%;
+		right: 4%;
+		box-shadow: 0 5px @text-white;
+	}
+
+	.main-nav__time {
+		margin-right: 55px;
+	}
+}
+@media (min-width: @desktop-width) {
+	.main-nav {
+		max-width: 1232px;
+	}
+
+	.main-nav__logo {
+		font-size: 20px;
+		line-height: 38px;
+		margin-right: 25px;
+	}
+
+	.main-nav__toogle {
+		display: none;
+	}
+
+	.main-nav__list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-right: 5px;
+
+		& a {
+			text-transform: none;
+			display: block;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			margin-right: 15px;
+		}
+	}
+
+	.main-nav__feedback {
+		margin-right: 35px;
+	}
+}
